@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/screen/LoginScreen.dart';
-
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+Future<void> main() async {
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
