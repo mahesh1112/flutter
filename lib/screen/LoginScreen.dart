@@ -19,15 +19,16 @@ class _LoginScreenState extends State<LoginScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network('https://wallup.net/wp-content/uploads/2016/01/194784-animals-bears-river.jpg'),
+          Expanded(child: Container()),
+          Image.network('https://o.remove.bg/downloads/c30cc439-f21f-4c55-b634-404cc67c0ffe/png-clipart-shadow-fight-2-special-edition-shadow-fight-3-lynx-free-gems-lynx-game-animals-thumbnail-removebg-preview.png'),
 
         password(text: 'email', isPassword: false,),
           password(text: 'password', isPassword: true,),
 
           ClipRRect(
-            borderRadius: BorderRadius.circular(40.0),
+            borderRadius: BorderRadius.circular(20.0),
             child: Container(
-              width: 100,
+              width: 180,
               color:constant.emailPrimary,
               child: TextButton(
 
@@ -36,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(20.0),
                       side: BorderSide(
                         width: 4,
-                        color: constant.emailPrimary
+                        color: constant.textPrimary
                       ),
 
                     )
@@ -44,9 +45,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: (){},
                   child: Text(
                     'Login',
-                     style: TextStyle(
+                  style: TextStyle(
                      fontSize: 40.0,
-                     color: constant.emailPrimary
+                     color: constant.textPrimary,
                 ),
               )),
             ),
